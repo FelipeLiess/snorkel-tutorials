@@ -321,9 +321,8 @@ import re
 
 @labeling_function()
 def regex_check_out(x):
-    return SPAM if re.search(r"check.*out", x.text, flags=re.I) else ABSTAIN
-
-
+    return SPAM if re.search(r"check.*out" , x.text , flags=re.I) else ABSTAIN
+    
 # %% [markdown]
 # Again, let's generate our label matrices and see how we do.
 
